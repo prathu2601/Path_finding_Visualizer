@@ -1,0 +1,128 @@
+.node {
+  border: 1.5px solid #94bcd2;
+  border-radius: 1px;
+
+  background-color: #f8f8ff;
+}
+
+.node-start {
+  border: 1.5px solid #94bcd2;
+  background-image: url(../../fontsAndImg/start.png);
+}
+
+.node-end {
+  border: 1.5px solid #94bcd2;
+  background-image: url(../../fontsAndImg/end.png);
+}
+
+.node-wall {
+  border: 1.5px solid #94bcd2;
+  background-color: rgb(12, 53, 71);
+}
+
+.node-visited {
+  background-color: white;
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* background-image: linear-gradient(to right, #046582, #0094a0, #00c194, #72e761, #ffff00); */
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.25);
+    border-radius: 100%;
+
+    background-color: #ffff00;
+    border: 1.5px solid #94bcd2;
+  }
+  25% {
+    transform: scale(0.6);
+    border-radius: 75%;
+
+    background-color: #72e761;
+    border: 1.5px solid #94bcd2;
+  }
+  50% {
+    transform: scale(0.9);
+    border-radius: 45%;
+
+    background-color: #00c194;
+    border: 1.5px solid #94bcd2;
+  }
+
+  75% {
+    transform: scale(1.2);
+    border-radius: 10%;
+
+    background-color: #0094a0;
+    border: 1.5px solid #94bcd2;
+  }
+
+  100% {
+    transform: scale(1);
+    border-radius: 0%;
+
+    background-color: #046582;
+    border: 1.5px solid #94bcd2;
+  }
+}
+
+.node-shortest-path {
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* background-image: linear-gradient(to right, #f8e9a1, #c0eaa9, #87e5c3, #59dbe2, #5bccf6); */
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.25);
+    border-radius: 100%;
+
+    background-color: #5bccf6;
+    border: 1.5px solid #94bcd2;
+  }
+  25% {
+    transform: scale(0.6);
+    border-radius: 75%;
+
+    background-color: #59dbe2;
+    border: 1.5px solid #94bcd2;
+  }
+  50% {
+    transform: scale(0.9);
+    border-radius: 45%;
+
+    background-color: #87e5c3;
+    border: 1.5px solid #94bcd2;
+  }
+
+  75% {
+    transform: scale(1.2);
+    border-radius: 10%;
+
+    background-color: #c0eaa9;
+    border: 1.5px solid #94bcd2;
+  }
+
+  100% {
+    transform: scale(1);
+    border-radius: 0%;
+
+    background-color: #f8e9a1;
+    border: 1.5px solid #94bcd2;
+  }
+}

@@ -1,0 +1,295 @@
+@font-face {
+  font-family: BigShouldersDisplay-Light;
+  src: local('BigShouldersDisplay-Light'),
+    url(../../fontsAndImg/BigShouldersDisplay-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: BigShouldersDisplay-Regular;
+  src: local('BigShouldersDisplay-Regular'),
+    url(../../fontsAndImg/BigShouldersDisplay-Regular.ttf) format('truetype');
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #24305e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  font-family: 'BigShouldersDisplay-Regular', sans-serif;
+  color: aliceblue;
+
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.sidebar_button {
+  background-color: #f8e9a1;
+  border: 0px;
+
+  width: 45%;
+  min-width: 30%;
+  padding-bottom: 1%;
+  border-radius: 1px;
+  font-family: 'BigShouldersDisplay-Light', sans-serif;
+  color: #24305e;
+  font-size: 30px;
+}
+
+.sidebar_button:hover {
+  background-color: #374785;
+  color: #f8e9a1;
+}
+
+.sidebar_open {
+  background-color: #f8e9a1;
+  border: 0px;
+
+  width: 45%;
+  min-width: 30%;
+  padding-bottom: 1%;
+  border-radius: 1px;
+  font-family: 'BigShouldersDisplay-Light', sans-serif;
+  color: #24305e;
+  font-size: 30px;
+}
+
+.sidebar_open:hover {
+  background-color: #24305e;
+  color: #f8e9a1;
+}
+
+.open_button {
+  width: 27px;
+  height: 27px;
+}
+
+.closeNav {
+  background-color: #20262c;
+  border: 0px;
+
+  position: absolute;
+  right: 33.5%;
+  padding-bottom: 0.25%;
+  padding-top: 0.1%;
+  padding-left: 0.75%;
+  padding-right: 0.75%;
+
+  font-family: 'BigShouldersDisplay-Regular', sans-serif;
+  color: aliceblue;
+  font-size: 35px;
+}
+
+.closeNav:hover {
+  background-color: #343a40;
+}
+
+.viz_button {
+  background-color: #343a40;
+  border: 0px;
+  font-family: 'BigShouldersDisplay-Regular', sans-serif;
+  color: aliceblue;
+  font-size: 35px;
+}
+
+.viz_button:hover {
+  background-color: #20262c;
+}
+
+.navbar.navbar-dark.bg-dark {
+  font-family: 'BigShouldersDisplay-Regular', sans-serif;
+  color: white;
+}
+
+/* .dd-wrapper {
+  width: 200px;
+  font-size: 27px;
+
+  color: white;
+}
+.dd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 1px;
+  background-color: black;
+  line-height: 38px;
+  cursor: default;
+  cursor: poBigShouldersDisplay;
+
+  font-family: "BigShouldersDisplay-Regular", sans-serif;
+  text-align: center;
+}
+.dd-header-title {
+  margin: 2px 20px;
+  margin-right: 30px;
+  font-size: 27px;
+  color: black;
+
+  font-family: "BigShouldersDisplay-Regular", sans-serif;
+  text-align: center;
+} */
+/* 
+.dd-list {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  max-height: 215px;
+  border: 1px solid rgb(223, 223, 223);
+  border-top: none;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  box-shadow: 0 2px 5px -1px rgb(232, 232, 232);
+  background-color: white;
+  font-size: 27px;
+
+  color: black;
+  font-family: "BigShouldersDisplay-Light", sans-serif;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dd-list:hover {
+  background-color: white;
+}
+
+.dd-list ul::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2.5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 2.5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.speed {
+  color: #f8e9a1;
+  font-family: 'BigShouldersDisplay-Light', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navbar.navbar-dark.bg-dark {
+  /* background-color: #287a78 !important; */
+  background-color: #374785 !important;
+}
+
+.titleClass {
+  font-family: 'BigShouldersDisplay-Light', sans-serif;
+  font-size: 35px;
+  padding-left: 23.75%;
+  color: #f8e9a1;
+}
+
+.dd-wrapper {
+  font-family: 'BigShouldersDisplay-Light', sans-serif !important;
+
+  position: relative !important;
+  width: 348px !important;
+  font-size: 1.6rem !important;
+  user-select: none !important;
+}
+
+.dd-header {
+  font-family: 'BigShouldersDisplay-Light', sans-serif !important;
+
+  display: flex !important;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: relative !important;
+  border-radius: 1px !important;
+  background-color: #f8e9a1 !important;
+  color: #24305e !important;
+  line-height: 38px !important;
+  cursor: default !important;
+  cursor: poBigShouldersDisplay !important;
+}
+
+.dd-header-title {
+  font-family: 'BigShouldersDisplay-Light', sans-serif !important;
+
+  margin: 2px 20px !important;
+  margin-right: 30px !important;
+}
+
+.dd-header:hover {
+  background-color: #374785 !important;
+  color: #f8e9a1 !important;
+  border-color: #374785 !important;
+}
+
+.dd-list {
+  font-family: 'BigShouldersDisplay-Light', sans-serif !important;
+
+  position: absolute !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  max-height: 215px !important;
+  border: 1px solid black !important;
+  border-top: none !important;
+  border-bottom-left-radius: 1px !important;
+  border-bottom-right-radius: 1px !important;
+  background-color: #f8e9a1 !important;
+  color: #24305e !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.dd-scroll-list {
+  font-family: 'BigShouldersDisplay-Light', sans-serif !important;
+
+  overflow-y: scroll !important;
+  max-height: 215px !important;
+  padding: 15px 0 !important;
+}
+
+.dd-list-item {
+  font-family: 'BigShouldersDisplay-Light', sans-serif !important;
+
+  display: inline-block !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  padding: 8px 10px !important;
+  font-size: 1.5rem !important;
+  line-height: 1.6rem !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  cursor: default !important;
+  cursor: poBigShouldersDisplay !important;
+}
+
+.dd-list-item.no-result {
+  font-weight: normal !important;
+  cursor: default !important;
+}
+
+.dd-list-item:hover {
+  background-color: #24305e !important;
+  color: #f8e9a1 !important;
+}
