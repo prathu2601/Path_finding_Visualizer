@@ -265,6 +265,10 @@ function Main() {
     // setContentIndex(1);
     let startNode = grid[start_x][start_y]
     let endNode = grid[end_x][end_y]
+    document.getElementById(`node-${startNode.x}-${startNode.y}`).className =
+      'node-start'
+    document.getElementById(`node-${endNode.x}-${endNode.y}`).className =
+      'node-end'
 
     let ansReturned = bfs(startNode, endNode)
     fp = ansReturned.finalPath
@@ -277,7 +281,10 @@ function Main() {
     // setContentIndex(2);
     let startNode = grid[start_x][start_y]
     let endNode = grid[end_x][end_y]
-
+    document.getElementById(`node-${startNode.x}-${startNode.y}`).className =
+      'node-start'
+    document.getElementById(`node-${endNode.x}-${endNode.y}`).className =
+      'node-end'
     let ansReturned = dfs(grid, startNode, endNode, rows, cols)
     fp = ansReturned.finalPath
     vn = ansReturned.visited
@@ -289,6 +296,10 @@ function Main() {
     // setContentIndex(3);
     let startNode = grid[start_x][start_y]
     let endNode = grid[end_x][end_y]
+    document.getElementById(`node-${startNode.x}-${startNode.y}`).className =
+      'node-start'
+    document.getElementById(`node-${endNode.x}-${endNode.y}`).className =
+      'node-end'
 
     let ansReturned = dijkstra(startNode, endNode)
     fp = ansReturned.finalPath
@@ -301,7 +312,10 @@ function Main() {
     // setContentIndex(4);
     let startNode = grid[start_x][start_y]
     let endNode = grid[end_x][end_y]
-
+    document.getElementById(`node-${startNode.x}-${startNode.y}`).className =
+      'node-start'
+    document.getElementById(`node-${endNode.x}-${endNode.y}`).className =
+      'node-end'
     let ansReturned = astar(startNode, endNode)
     fp = ansReturned.finalPath
     vn = ansReturned.visited
@@ -503,6 +517,15 @@ function Main() {
             >
               If you want to dive right in, feel free to press the "Skip
               Tutorial" button below. Otherwise, press "Next"!
+            </p>
+            <p
+              className='modelHeading_light'
+              style={{ textAlign: 'center', fontSize: '35px' }}
+            >
+              If you want to see the code, check my{' '}
+              <a href='https://github.com/prathu2601/Path_finding_Visualizer'>
+                Github
+              </a>
             </p>
 
             <div className='row'>
